@@ -28,6 +28,12 @@ A MySQL/MariaDB project demonstrating relational database design, employee recor
 - Subqueries
 - BETWEEN and date filtering
 - Calculated columns
+- CASE expressions
+- Common Table Expressions (CTEs)
+- Window functions: RANK and DENSE_RANK
+- Running totals using window functions
+- Department-wise salary analysis
+- Employees earning above department averages
 
 ## Project Setup
 Run these commands from the project directory on a machine with MariaDB installed:
