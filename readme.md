@@ -63,3 +63,32 @@ employee-management-sql/
 
 ## Purpose
 Created as a hands-on SQL learning project to demonstrate relational database fundamentals and practical query writing for entry-level IT roles.
+
+## Database Relationships
+
+### 1. Departments and Employees
+- Relationship: One-to-Many (1:N)
+- Primary Key: `departments.department_id`
+- Foreign Key: `employees.department_id`
+- One department can have multiple employees.
+
+### 2. Employees and Projects
+- Relationship: Many-to-Many (M:N)
+- Junction Table: `employee_projects`
+- Foreign Keys: `employee_id` and `project_id`
+- An employee can work on multiple projects, and a project can have multiple employees.
+- Composite Primary Key: `(employee_id, project_id)`
+
+### 3. Employees and Salary History
+- Relationship: One-to-Many (1:N)
+- Primary Key: `employees.employee_id`
+- Foreign Key: `salary_history.employee_id`
+- One employee can have multiple salary history records.
+
+## Database Constraints
+- **PRIMARY KEY:** Uniquely identifies each record.
+- **FOREIGN KEY:** Maintains referential integrity between related tables.
+- **NOT NULL:** Prevents missing values in required columns.
+- **UNIQUE:** Prevents duplicate values in designated columns.
+- **AUTO_INCREMENT:** Automatically generates numeric IDs.
+-
